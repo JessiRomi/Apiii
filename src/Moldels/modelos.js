@@ -14,17 +14,14 @@ const Productos = miConexion.define("producto", {
         type: DataTypes.STRING(255),
         allowNull: false
     },
-    categoria: {
-        type: DataTypes.STRING(255),
-        allowNull: true,
-        defaultValue: null
-    },
+    
     precio: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    cantidad: {
-        type: DataTypes.INTEGER,
+    
+    imagen: {
+        type: DataTypes.STRING(255),
         allowNull: true 
     }
 });
